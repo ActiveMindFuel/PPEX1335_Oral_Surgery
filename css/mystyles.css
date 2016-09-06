@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*** Global ------------------------------------------------------- */
+html, body {
+  margin: 0 auto;
+  height: 100%; }
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  background-color: #c7e1ff;
+  font-size: 13px;
+  -webkit-tap-highlight-color: transparent; }
+
+video {
+  width: 100%;
+  height: auto; }
+
+/*** Demo ------------------------------------------------------- */
+section.demo * {
+  font-size: 13px; }
+
+section.demo {
+  font-size: 0;
+  text-align: center;
+  background-image: url("../img/example_bg_v.png"); }
+
+/*** Containers ------------------------------------------------------- */
+#content-wrapper, #example-wrapper {
+  height: 100%;
+  height: 100vh; }
+
+.scrollContainer {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%; }
+
+.scrollContainer {
+  height: 100%;
+  margin: auto; }
+
+#example-wrapper .scrollContent {
+  height: 100%; }
+
+/*** Wipes ------------------------------------------------------- */
+.demo#section-wipes {
+  height: 100%;
+  width: 100%;
+  background-image: none; }
+
+.demo#section-slides .panel, .demo#section-wipes .panel {
+  background-image: url("../img/example_bg_spacer_v.gif"); }
+
+.demo#section-wipes #pinContainer .turqoise, .demo#section-wipes #pinContainer .green, .demo#section-slides #slideContainer .panel {
+  background-image: url("../img/example_bg_spacer_h.gif"); }
+
+.demo#section-slides .panel > b, .demo#section-wipes .panel > b {
+  font-size: 15px;
+  color: white;
+  position: relative;
+  display: block;
+  height: 0;
+  overflow: visible;
+  top: 50%; }
+
+/*** Waitingscreen ------------------------------------------------------- */
+section#waitingscreen {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  min-width: 100%;
+  height: 100vh; }
+
+section#waitingscreen #description {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: -150px auto auto -300px; }
+
+section#waitingscreen #description h1 {
+  margin: 0; }
+
+section#waitingscreen #description h2 {
+  margin-bottom: 20px; }
+
+#example-wrapper section#waitingscreen #description:after {
+  content: "↧";
+  font-size: 40px;
+  display: block; }
+
+section#waitingscreen #description a.viewsource {
+  margin-bottom: 20px;
+  display: inline-block; }
+
+/*** Parallax ------------------------------------------------------- */
+#parallaxContainer-01 {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: relative;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abbc6+0,eef2f4+100 */
+  background: #7abbc6;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #7abbc6 0%, #eef2f4 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #7abbc6 0%, #eef2f4 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #7abbc6 0%, #eef2f4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abbc6', endColorstr='#eef2f4',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+#parallaxContainer-01 .layer1 {
+  height: 100%;
+  text-align: center; }
+
+#parallaxContainer-01 .layer2 {
+  background-image: url("../img/example_parallax_l1-v2.png");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 32px; }
+
+#parallaxContainer-01 .layer3 {
+  background-color: red;
+  position: absolute;
+  height: 300px;
+  width: 800px;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -400px; }
+
+#parallaxContainer-01 .layer4 {
+  background-color: yellow;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px; }
+
+#parallaxContainer-01 .layer5 {
+  background-color: orange;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: 50px; }
+
+#parallaxContainer-01 .layer6 {
+  background-color: pink;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px; }
+
+#parallaxVideo-01 {
+  width: 100%;
+  height: auto;
+  top: 0px;
+  position: relative; }
+
+#parallaxVideo-01 .layerVid1 {
+  background-color: blue;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px; }
+
+#parallaxVideo-01 .layerVid2 {
+  background-color: green;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: 50px; }

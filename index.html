@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Opioid Awareness Interactive</title>
+		<link rel="stylesheet" href="css/mystyles.css">
+	
+		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lib/highlight.pack.js"></script>
+		<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+		<script type="text/javascript" src="js/examples.js"></script>
+		
+		<script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+		<script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+		<script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+	</head>
+	<body>
+		<div id="content-wrapper">
+			<div id="example-wrapper">
+				<div class="scrollContent">
+					<section id="waitingscreen">
+						<div id="description">
+							<h1 class="badge gsap">Help Change the Face of <strong>Postsurgical Pain Control</strong></h1>
+							<h2>waitingscreen</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fuga aut asperiores vel totam, voluptates quos voluptatibus similique non odit maxime impedit, debitis praesentium nisi quibusdam ratione, neque. Minima, optio similique possimus? Accusantium facilis architecto facere quibusdam enim aperiam quidem cupiditate numquam cumque ipsa ad quis dolore praesentium suscipit soluta, alias error reiciendis, beatae eum dolores ipsam sed! Veniam odio, maxime nesciunt error libero tempore. Et aspernatur in dicta reiciendis a ea delectus provident maxime dolorem facilis saepe minus, iste quibusdam, quidem aliquid unde laborum iure corrupti, quia cumque excepturi natus! Fuga quis odio, laborum corrupti aspernatur soluta ducimus nostrum.
+							</p>
+						</div>
+					</section>
+					<section class="demo" id="section-wipes">
+						<div id="parallaxContainer-01">
+							<div class="layer1"><!-- container??? -->
+								<div class="box1 white">
+									<p>A box in the sky.</p>
+									<a href="#" class="viewsource">view source</a>
+								</div>
+							</div>
+							<div class="layer2"></div><!-- pills -->
+							<div class="layer3"></div><!-- red square -->
+							<div class="layer4"></div><!-- yellow -->
+							<div class="layer5"></div><!-- orange -->
+							<div class="layer6"></div><!-- pink -->
+						</div>
+						<script>
+							$(function () { // wait for document ready
+								// init
+								var controller = new ScrollMagic.Controller();
+	
+								// parallax
+								// build tween
+								var tween = new TimelineMax ()
+									.add([
+										TweenMax.to("#parallaxContainer-01 .layer1", 1, {backgroundPosition: "0 -140%", ease: Linear.easeNone}),
+										TweenMax.to("#parallaxContainer-01 .layer2", 1, {backgroundPosition: "0 -1000%", ease: Linear.easeNone}),
+										TweenMax.to("#parallaxContainer-01 .layer3", 1, {backgroundPosition: "0 -225%", ease: Linear.easeNone}),
+										TweenMax.fromTo("#parallaxContainer-01 .layer4", 1, {scale: 3, top: 500}, {top: 300, ease: Linear.easeNone}),
+										TweenMax.to("#parallaxContainer-01 .layer5", 1, {backgroundPosition: "0 -1000%", ease: Linear.easeNone}),
+										TweenMax.to("#parallaxContainer-01 .layer6", 1, {backgroundPosition: "100 -225%", ease: Linear.easeNone})
+									]);
+		
+								// build scene
+								var scene = new ScrollMagic.Scene({triggerElement: "#parallaxContainer-01", duration: 2000, offset: 450})
+									.setTween(tween)
+									.setPin("#parallaxContainer-01")
+									.addIndicators() // add indicators (requires plugin)
+									.addTo(controller);
+							});
+						</script>
+						<div id="parallaxVideo-01">
+							<video id="movie1" src="vid/shutterstock_v12608801.mp4"></video>
+							<div class="layerVid1"></div>
+							<div class="layerVid2"></div>
+						</div>
+						<script>
+							$(function () { // wait for document ready
+								// init
+								var controller = new ScrollMagic.Controller();
+	
+								// parallax
+								// build tween
+								var tween = new TimelineMax ()
+									.add([
+										TweenMax.to("#parallaxVideo-01 .layerVid1", 1, {backgroundPosition: "0 -140%", ease: Linear.easeNone}),
+										TweenMax.to("#parallaxVideo-01 .layerVid2", 1, {backgroundPosition: "0 -500%", ease: Linear.easeNone}),
+										TweenMax.to("#parallaxVideo-01 .layerVid3", 1, {backgroundPosition: "0 -225%", ease: Linear.easeNone})
+									]);
+		
+								// build scene
+								var scene = new ScrollMagic.Scene({triggerElement: "#parallaxVideo-01", duration: 3000, offset: 450})
+									.setTween(tween)
+									.setPin("#parallaxVideo-01")
+									.addIndicators() // add indicators (requires plugin)
+									.addTo(controller);
+									scene.on("enter", function (event) {
+									    console.log("Scene entered.");
+									    document.getElementById('movie1').play();
+									});
+							});
+						</script>
+						<div id="parallaxContainerTwo">
+							<div class="layer1"><!-- container??? -->
+								<div class="box1 white">
+									<p>A second box in the sky.</p>
+									<a href="#" class="viewsource">view source</a>
+								</div>
+							</div>
+							<div class="layer2"></div><!-- grass -->
+							<div class="layer3"></div><!-- ground -->
+						</div>
+					</section>
+					<script>
+						$(function () { // wait for document ready
+							// init
+							var controller = new ScrollMagic.Controller();
+
+							// parallax
+							// build tween
+							var tween = new TimelineMax ()
+								.add([
+									TweenMax.to("#parallaxContainerTwo .layer1", 1, {backgroundPosition: "0 -140%", ease: Linear.easeNone}),
+									TweenMax.to("#parallaxContainerTwo .layer2", 1, {backgroundPosition: "0 -500%", ease: Linear.easeNone}),
+									TweenMax.to("#parallaxContainerTwo .layer3", 1, {backgroundPosition: "0 -225%", ease: Linear.easeNone})
+								]);
+	
+							// build scene
+							var scene = new ScrollMagic.Scene({triggerElement: "#parallaxContainerTwo", duration: 3000, offset: 450})
+								.setTween(tween)
+								.setPin("#parallaxContainerTwo")
+								.addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
