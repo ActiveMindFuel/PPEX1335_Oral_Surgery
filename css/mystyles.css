@@ -90,7 +90,6 @@ section#waitingscreen #description h2 {
   display: block; }
 
 section#waitingscreen #description a.viewsource {
-  margin-bottom: 20px;
   display: inline-block; }
 
 /*** Parallax ------------------------------------------------------- */
@@ -120,10 +119,11 @@ section#waitingscreen #description a.viewsource {
   position: absolute;
   height: 100%;
   width: 100%;
-  bottom: 32px; }
+  bottom: 0px; }
 
 #parallaxContainer-01 .layer3 {
-  background-color: red;
+  background-image: url("../svg/pill_bottle_circle.svg");
+  background-repeat: no-repeat;
   position: absolute;
   height: 300px;
   width: 800px;
@@ -133,7 +133,8 @@ section#waitingscreen #description a.viewsource {
   margin-left: -400px; }
 
 #parallaxContainer-01 .layer4 {
-  background-color: yellow;
+  background-image: url("../svg/pill_bottle.svg");
+  background-repeat: no-repeat;
   position: absolute;
   height: 100px;
   width: 100px;
@@ -142,10 +143,9 @@ section#waitingscreen #description a.viewsource {
   margin-left: -50px; }
 
 #parallaxContainer-01 .layer5 {
-  background-color: orange;
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 500px;
   top: 50%;
   left: 50%;
   margin-left: 50px; }

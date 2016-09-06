@@ -74,7 +74,7 @@ section#waitingscreen #description h2 { margin-bottom: 20px; }
 	display: block;
 }
 section#waitingscreen #description a.viewsource {
-	margin-bottom: 20px;
+	//margin-bottom: 20px;
 	display: inline-block;
 }
 
@@ -96,16 +96,16 @@ section#waitingscreen #description a.viewsource {
 	text-align: center;
 }
 #parallaxContainer-01 .layer2 {
-	//background-image: url("../img/example_parallax_l2.png");
 	background-image: url("../img/example_parallax_l1-v2.png");
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	bottom: 32px
+	bottom: 0px
 }
 #parallaxContainer-01 .layer3 {
-	//background-image: url("../img/example_parallax_l3.gif");
-	background-color: red;
+	background-image: url("../svg/pill_bottle_circle.svg");
+	background-repeat: no-repeat;
+	//background-color: red;
 	position: absolute;
 	height: 300px;
 	width: 800px;
@@ -115,7 +115,9 @@ section#waitingscreen #description a.viewsource {
 	margin-left: -400px;
 }
 #parallaxContainer-01 .layer4 {
-	background-color: yellow;
+	background-image: url("../svg/pill_bottle.svg");
+	background-repeat: no-repeat;
+	//background-color: yellow;
 	position: absolute;
 	height: 100px;
 	width: 100px;
@@ -124,10 +126,10 @@ section#waitingscreen #description a.viewsource {
 	margin-left: -50px;
 }
 #parallaxContainer-01 .layer5 {
-	background-color: orange;
+	//background-color: orange;
 	position: absolute;
-	height: 100px;
-	width: 100px;
+	height: 300px;
+	width: 500px;
 	top: 50%;
 	left: 50%;
 	margin-left: 50px;

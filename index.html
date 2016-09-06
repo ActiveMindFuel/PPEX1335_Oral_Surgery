@@ -31,15 +31,15 @@
 					<section class="demo" id="section-wipes">
 						<div id="parallaxContainer-01">
 							<div class="layer1"><!-- container??? -->
-								<div class="box1 white">
+								<!-- <div class="box1 white">
 									<p>A box in the sky.</p>
 									<a href="#" class="viewsource">view source</a>
-								</div>
+								</div> -->
 							</div>
-							<div class="layer2"></div><!-- pills -->
-							<div class="layer3"></div><!-- red square -->
-							<div class="layer4"></div><!-- yellow -->
-							<div class="layer5"></div><!-- orange -->
+							<div class="layer2"></div><!-- pills / parallax -->
+							<div class="layer3"></div><!-- pill_bottle_circle -->
+							<div class="layer4"></div><!-- pill_bottle -->
+							<div class="layer5"><video id="movie1" src="vid/shutterstock_v12608801.mp4"></video></div><!-- video -->
 							<div class="layer6"></div><!-- pink -->
 						</div>
 						<script>
@@ -60,7 +60,7 @@
 									]);
 		
 								// build scene
-								var scene = new ScrollMagic.Scene({triggerElement: "#parallaxContainer-01", duration: 2000, offset: 450})
+								var scene = new ScrollMagic.Scene({triggerElement: "#parallaxContainer-01", duration: 2000, offset: 491})
 									.setTween(tween)
 									.setPin("#parallaxContainer-01")
 									.addIndicators() // add indicators (requires plugin)
